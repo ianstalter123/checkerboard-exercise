@@ -19,26 +19,20 @@ for (var i =0 ; i<9; i++)
 	for (var j = 0; j < 8; j++)
 	{
 
-		if(j%2 === 0)
-		{
+		
+
+			var rando1 = Math.floor(Math.random() * 255);
+			var rando2 = Math.floor(Math.random() * 255);
+			var rando3 = Math.floor(Math.random() * 255);
+
 		var square = document.createElement("div");
 		square.style.width = "11%";
 		square.style.height = "100px";
-		square.style.background = "red";
+		square.style.background = "rgb("+ rando1 + "," + rando2 + "," + rando3 + ")";
 		square.style.float = "left";
 		document.body.appendChild(square);
-		console.log('hello');
-	}
-	else
-	{
-		var square = document.createElement("div");
-		square.style.width = "11%";
-		square.style.height = "100px";
-		square.style.background = "black";
-		square.style.float = "left";
-		document.body.appendChild(square);
-		console.log('hello');
-	}
+		
+	
 	} 
 }
 
